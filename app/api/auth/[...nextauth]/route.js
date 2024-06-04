@@ -20,7 +20,7 @@ const authOptions = {
             const userExists = await User.findOne({ email });
   
             if (!userExists) {
-              const res = await fetch("http://localhost:3000/api/user", {
+              const res = await fetch("https://main.d364fvk1lib661.amplifyapp.com/api/user", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
